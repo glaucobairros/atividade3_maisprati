@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, rgba(27, 38, 49, 0.9), rgba(44, 62, 80, 0.9), rgba(23, 32, 42, 0.9));
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    background-color: #34495e;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+section {
+    width: 70%;
+    background-color: #fcfaec;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.paragrafo {
+    font-size: 1rem;
+    padding-top: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+aside {
+    width: 30%;
+    background-image: url(img/Pegadas_patas.jpg);
+    background-size: 100% auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section-title, .aside-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #505050;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+aside ul li a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: #505050;
+    color: #fff;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    section, aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .section-title, .aside-title {
+        font-size: 1.2rem;
+    }
+
+    .paragrafo {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section, .aside {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        font-size: 0.9rem;
+    }
+
+    .section-title, .aside-title {
+        font-size: 1rem;
+    }
+
+    .paragrafo {
+        font-size: 0.8rem;
+    }
+}
